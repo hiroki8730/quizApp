@@ -26,16 +26,23 @@
     <div id="quiz-container">
         <p id="quiz"></p>
     </div>
-
-    <div id="answers">
         <button id="btn">開始</button><br>
-    </div>
-
+        <ul id="select">
+            <li><button class="btn" onclick="pushChoices(event)"></button></li>
+            <li><button class="btn" onclick="pushChoices(event)"></button></li>
+            <li><button class="btn" onclick="pushChoices(event)"></button></li>
+            <li><button class="btn" onclick="pushChoices(event)"></button></li>
+        </ul>
+        <div id="home-button-container"></div>
     <style>
         #quiz {
             padding: 15px 0;
             border-top: 2px solid gray;
             border-bottom: 2px solid gray;
+        }
+
+        ul {
+            display: none;
         }
 
         #quiz-number {
